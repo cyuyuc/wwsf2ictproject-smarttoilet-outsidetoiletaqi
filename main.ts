@@ -16,6 +16,6 @@ basic.forever(function () {
         basic.showNumber(aqi)
         aqi = 1
     } else {
-        basic.showIcon(IconNames.Surprised)
+        basic.showIcon(IconNames.StickFigure)
     }
 })
