@@ -12,7 +12,10 @@ basic.forever(function () {
     if (aqi == 999) {
         music.playMelody("C C C5 C5 C C C5 C5 ", 200)
         basic.showString("SOS")
-    } else {
+    } else if (aqi == 1) {
         basic.showNumber(aqi)
+        aqi = 1
+    } else {
+        basic.showIcon(IconNames.Surprised)
     }
 })
